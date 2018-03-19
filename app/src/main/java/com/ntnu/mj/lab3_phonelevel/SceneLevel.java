@@ -115,9 +115,11 @@ public class SceneLevel extends View {
         if(xCheck >= xUpperBoundary) {
             bubbleX = bubbleX-pushBack;
             vibrate();
+            ping();
         } else if(xCheck <= bothLowerBoundary) {
             bubbleX = bubbleX+pushBack;
             vibrate();
+            ping();
         } else {
             bubbleX = (int) (bubbleX+step*(1*event.values[1]));
         }
